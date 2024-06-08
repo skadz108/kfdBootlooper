@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		437CD1172BE5C1AF00F224EE /* SwiftKFD in Frameworks */ = {isa = PBXBuildFile; productRef = 437CD1162BE5C1AF00F224EE /* SwiftKFD */; };
+		437CD1402BE5DD1A00F224EE /* kfdHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437CD13F2BE5DD1A00F224EE /* kfdHelpers.swift */; };
 		437CD9F72BE357160076D30F /* kfdBootlooperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437CD9F62BE357160076D30F /* kfdBootlooperApp.swift */; };
 		437CD9F92BE357160076D30F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437CD9F82BE357160076D30F /* ContentView.swift */; };
 		437CD9FB2BE357180076D30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437CD9FA2BE357180076D30F /* Assets.xcassets */; };
 		437CD9FE2BE357180076D30F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437CD9FD2BE357180076D30F /* Preview Assets.xcassets */; };
+		43800E3E2C12DF5E0092FC99 /* SwiftKFD in Frameworks */ = {isa = PBXBuildFile; productRef = 43800E3D2C12DF5E0092FC99 /* SwiftKFD */; };
+		43800E412C12E2510092FC99 /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = 43800E402C12E2510092FC99 /* SwiftfulLoadingIndicators */; };
+		4380CFB22C12CEF000F2363B /* URLBackport in Frameworks */ = {isa = PBXBuildFile; productRef = 4380CFB12C12CEF000F2363B /* URLBackport */; };
+		438170822BE690C300DD832D /* SwiftKFD in Frameworks */ = {isa = PBXBuildFile; productRef = 438170812BE690C300DD832D /* SwiftKFD */; };
+		4381A0602BE44A2400A34C16 /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4381A05F2BE44A2400A34C16 /* Alert++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		437CD13F2BE5DD1A00F224EE /* kfdHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kfdHelpers.swift; sourceTree = "<group>"; };
 		437CD9F32BE357160076D30F /* kfdBootlooper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kfdBootlooper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		437CD9F62BE357160076D30F /* kfdBootlooperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kfdBootlooperApp.swift; sourceTree = "<group>"; };
 		437CD9F82BE357160076D30F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		437CD9FA2BE357180076D30F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		437CD9FD2BE357180076D30F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4381A05F2BE44A2400A34C16 /* Alert++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4380CFB22C12CEF000F2363B /* URLBackport in Frameworks */,
+				437CD1172BE5C1AF00F224EE /* SwiftKFD in Frameworks */,
+				43800E3E2C12DF5E0092FC99 /* SwiftKFD in Frameworks */,
+				438170822BE690C300DD832D /* SwiftKFD in Frameworks */,
+				43800E412C12E2510092FC99 /* SwiftfulLoadingIndicators in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +65,12 @@
 		437CD9F52BE357160076D30F /* kfdBootlooper */ = {
 			isa = PBXGroup;
 			children = (
+				4381A05F2BE44A2400A34C16 /* Alert++.swift */,
 				437CD9F62BE357160076D30F /* kfdBootlooperApp.swift */,
 				437CD9F82BE357160076D30F /* ContentView.swift */,
 				437CD9FA2BE357180076D30F /* Assets.xcassets */,
 				437CD9FC2BE357180076D30F /* Preview Content */,
+				437CD13F2BE5DD1A00F224EE /* kfdHelpers.swift */,
 			);
 			path = kfdBootlooper;
 			sourceTree = "<group>";
@@ -83,6 +99,13 @@
 			dependencies = (
 			);
 			name = kfdBootlooper;
+			packageProductDependencies = (
+				437CD1162BE5C1AF00F224EE /* SwiftKFD */,
+				438170812BE690C300DD832D /* SwiftKFD */,
+				4380CFB12C12CEF000F2363B /* URLBackport */,
+				43800E3D2C12DF5E0092FC99 /* SwiftKFD */,
+				43800E402C12E2510092FC99 /* SwiftfulLoadingIndicators */,
+			);
 			productName = kfdBootlooper;
 			productReference = 437CD9F32BE357160076D30F /* kfdBootlooper.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +122,7 @@
 				TargetAttributes = {
 					437CD9F22BE357160076D30F = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -111,6 +135,11 @@
 				Base,
 			);
 			mainGroup = 437CD9EA2BE357160076D30F;
+			packageReferences = (
+				4380CFB02C12CEF000F2363B /* XCRemoteSwiftPackageReference "URLBackport-archive" */,
+				43800E3C2C12DF5E0092FC99 /* XCRemoteSwiftPackageReference "SwiftKFD" */,
+				43800E3F2C12E2510092FC99 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
+			);
 			productRefGroup = 437CD9F42BE357160076D30F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				437CD9F92BE357160076D30F /* ContentView.swift in Sources */,
+				4381A0602BE44A2400A34C16 /* Alert++.swift in Sources */,
+				437CD1402BE5DD1A00F224EE /* kfdHelpers.swift in Sources */,
 				437CD9F72BE357160076D30F /* kfdBootlooperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +209,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -197,13 +229,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -241,6 +274,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -254,12 +288,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -269,16 +304,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kfdBootlooper/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = kfdBootlooper;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,7 +329,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = online.skadz.kfdBootlooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = kfdBootlooper/BootloopBridge.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,16 +343,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kfdBootlooper/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = kfdBootlooper;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +368,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = online.skadz.kfdBootlooper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = kfdBootlooper/BootloopBridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -342,6 +398,59 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43800E3C2C12DF5E0092FC99 /* XCRemoteSwiftPackageReference "SwiftKFD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lrdsnow/SwiftKFD";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		43800E3F2C12E2510092FC99 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+		4380CFB02C12CEF000F2363B /* XCRemoteSwiftPackageReference "URLBackport-archive" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BomberFish/URLBackport-archive";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		437CD1162BE5C1AF00F224EE /* SwiftKFD */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftKFD;
+		};
+		43800E3D2C12DF5E0092FC99 /* SwiftKFD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43800E3C2C12DF5E0092FC99 /* XCRemoteSwiftPackageReference "SwiftKFD" */;
+			productName = SwiftKFD;
+		};
+		43800E402C12E2510092FC99 /* SwiftfulLoadingIndicators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43800E3F2C12E2510092FC99 /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
+		};
+		4380CFB12C12CEF000F2363B /* URLBackport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4380CFB02C12CEF000F2363B /* XCRemoteSwiftPackageReference "URLBackport-archive" */;
+			productName = URLBackport;
+		};
+		438170812BE690C300DD832D /* SwiftKFD */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftKFD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 437CD9EB2BE357160076D30F /* Project object */;
 }

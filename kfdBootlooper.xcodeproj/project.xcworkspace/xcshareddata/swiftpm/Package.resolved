@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftfulloadingindicators",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators",
+      "state" : {
+        "revision" : "85858c0246dcd781228301f9928519f75ce89758",
+        "version" : "0.0.4"
+      }
+    },
+    {
+      "identity" : "swiftkfd",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lrdsnow/SwiftKFD",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7d6345a4c21559645c151a56cb3614a17334219b"
+      }
+    },
+    {
+      "identity" : "urlbackport-archive",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/BomberFish/URLBackport-archive",
+      "state" : {
+        "branch" : "master",
+        "revision" : "23314bd50f109a7c07837bbea84de1f8362aac66"
+      }
+    }
+  ],
+  "version" : 2
+}
